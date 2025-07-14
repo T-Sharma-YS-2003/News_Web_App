@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import NewsCard from './NewsCard';
 import './App.css';
 
-const API_KEY = "e3ff3181060a4fe8851fba954abe3a38"; 
+const API_KEY = process.env.REACT_APP_NEWS_API;
 const categories = ["India", "Technology", "Science", "Business", "Sports"];
 
 function App() {
